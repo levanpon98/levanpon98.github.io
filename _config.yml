@@ -1,25 +1,26 @@
 # Site Settings
-name: BDS
-title: Become Data Scientist
-description: Đây là một trang web để chia sẽ nhưng kinh nghiệm cá nhân trong quá trình học tập để trở thành một Data Scientist
+name: Jekflix
+title: Jekflix | A blog theme for Jekyll
+description: Jekflix is a template for Jekyll inspired by Netflix and made by Thiago Rossener.
 tags:
-  - datascience
-  - datascientist
-  - probability
-  - statistics
-email: levanpon98@gmail.com
-disqus_username: levanpon98
-show_hero: false
+  - blog
+  - template
+  - jekyll
+  - theme
+  - netlify
+email: youremail@xyz.com
+disqus_username: disqus_username
+show_hero: true
 
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: levanpon98
-facebook_username: levanpon12
-twitter_username:
-instagram_username:
-linkedin_username:
-medium_username:
+github_username: github_username
+facebook_username: facebook_username
+twitter_username: twitter_username
+instagram_username: instagram_username
+linkedin_username: linkedin_username
+medium_username: medium_username
 
 
 # Theme Settings
