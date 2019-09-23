@@ -1,5 +1,5 @@
 ---
-date: 2019-05-16 23:48:05
+date: 2019-08-07
 layout: post
 title: Phân phối rời rạc (Phần 2) - Phân phối Bernoulli
 description: >-
