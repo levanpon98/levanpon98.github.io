@@ -1,5 +1,5 @@
 ---
-date: 2019-09-22 00:16:10
+date: 2019-09-23 00:16:10
 layout: post
 title: Limit Theorem (Phần 1) - Central Limit Theorem
 description: >-
