@@ -23,7 +23,7 @@ Phân phối chuẩn, còn được gọi là phân phối Gaussian (đối vớ
 - Diện tích khu vực dưới đường cong = 1
 - Luôn luôn đối xứng
 - mean ($$\mu$$) = median = mode
-- Mọi phân phối đều có thể đưa về phân phối chuẩn nếu tuân theo một tiêu chuẩn nào đó.
+- Mọi phân phối đều có thể xấp xỉ về phân phối chuẩn nếu tuân theo một tiêu chuẩn nào đó.
 
 ### 2. Hàm phân phối xác suất
 
