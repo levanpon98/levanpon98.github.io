@@ -1,7 +1,7 @@
 ---
 date: 2019-09-23 00:16:10
 layout: post
-title: Limit Theorem (Phần 1) - Central Limit Theorem
+title: Limit Theorem - Central Limit Theorem
 description: >-
   Bài viết này sẽ giới thiệu về Central Limit Theorem
 image: >-

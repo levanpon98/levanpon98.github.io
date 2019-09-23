@@ -1,7 +1,7 @@
 ---
 date: 2019-08-07
 layout: post
-title: Phân phối rời rạc (Phần 2) - Phân phối Bernoulli
+title: Phân phối rời rạc - Phân phối Bernoulli
 description: >-
   Bài viết này sẽ giới thiệu về Phân phối Bernoulli
 image: >-

@@ -1,7 +1,7 @@
 ---
 date: 2019-05-16 23:48:05
 layout: post
-title: Phân phối liên tục (Phần 1) - Phân phối chuẩn
+title: Phân phối liên tục - Phân phối chuẩn
 description: >-
   Bài viết này sẽ giới thiệu về Phân phối chuẩn
 image: >-

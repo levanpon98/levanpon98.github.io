@@ -1,7 +1,7 @@
 ---
 date: 2019-08-05
 layout: post
-title: Phân phối rời rạc (Phần 1) - Phân phối Binomial
+title: Phân phối rời rạc - Phân phối Binomial
 description: >-
   Bài viết này sẽ giới thiệu về Phân phối Binomial
 image: >-
