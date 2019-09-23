@@ -1,26 +1,27 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by Thiago Rossener.
+name: BDS
+title: Become Data Science
+description: Đây là trang web nhằm chia sẽ những kiến thức để trở thành một Data Scientist
 tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
-email: youremail@xyz.com
-disqus_username: disqus_username
-show_hero: true
+  - datascience
+  - tensorflow
+  - deeplearning
+  - statistics
+  - probability
+  - python
+email: levanpon98@gmail.com
+disqus_username: p_n_l
+show_hero: false
 
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+github_username: levanpon98
+facebook_username: levanpon12
+twitter_username:
+instagram_username:
+linkedin_username: pon-le-95764014b
+medium_username:
 
 
 # Theme Settings
@@ -32,16 +33,16 @@ texts: "#333333"
 
 
 # Posts Settings
-show_time_bar: true
+show_time_bar: false
 show_modal_on_exit: false
 show_modal_on_finish_post: true
-two_columns_layout: true
+two_columns_layout: false
 
 
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
+url: "https://becomedatascientist.github.io" # the base hostname & protocol for your site
+google_analytics: "UA-148427154-1"
 language: "en"
 
 
@@ -76,6 +77,7 @@ paginate_content:
 plugins:
   - jekyll-paginate
   - jekyll-paginate-content
+  - jekyll-seo-tag
 
 # Exclude my node related stuff
 exclude: [
