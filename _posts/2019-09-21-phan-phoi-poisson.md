@@ -44,13 +44,13 @@ $$
   	&=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {k!} \left(\frac{\mu}{N}\right)^k \left(1 - \frac{\mu}{N}\right)^N \left(1 - \frac{\mu}{N}\right)^{-k} \\
   	&=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {N^k} \frac{\mu^k}{k!} \left(1 - \frac{\mu}{N}\right)^N \left(1 - \frac{\mu}{N}\right)^{-k} \\
   	&=& 1 \times \frac{\mu^k}{k!} \times e^{-\mu} \times 1
-  \end {array}
+  \end{array}
 $$
 
 $$
  \begin{array}
-  	\lim\limits_{N \to \infty} C_N^k p^k (1 - p)^{N-k} &=& \lim\limits_{N \to \infty} \frac{N!}{k!(N - k)!} p^k (1-p)^{N-k} \\
-  \end {array}
+  	\lim\limits_{N \to \infty} C_N^k p^k (1 - p)^{N-k} &=& \lim\limits_{N \to \infty} \frac{N!} {k!(N - k)!} p^k (1-p)^{N-k} \\
+  \end{array}
 $$
 
 Từ đó suy ra 
