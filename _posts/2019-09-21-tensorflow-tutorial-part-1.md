@@ -7,9 +7,7 @@ description: >-
 image: >-
   https://res.cloudinary.com/dzwwhbt1i/image/upload/c_scale,h_300,w_400/v1569006448/1200px-TensorFlowLogo.svg_ukwygo.png
 category: tensorflow
-tags:
-  - tensorflow
-author: levanpon
+author: levanpon98
 paginate: true
 ---
 ### 1. Hướng dẫn cách cài đặt framework Tensorflow

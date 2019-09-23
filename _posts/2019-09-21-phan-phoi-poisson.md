@@ -5,12 +5,9 @@ title: Phân phối rời rạc (Phần 3) - Phân phối Poisson
 description: >-
   Bài viết này sẽ giới thiệu về Phân phối Poisson
 image: >-
-  https://res.cloudinary.com/dzwwhbt1i/image/upload/c_scale,h_300,w_400/v1569008243/1200px-Normal_Distribution_PDF.svg_w2r9gl.png
+  https://res.cloudinary.com/dzwwhbt1i/image/upload/c_scale,h_300,w_400/v1569262338/poisson_kecvc9.png
 category: distributions
-tags:
-  - probability
-  - distributions
-author: levanpon
+author: levanpon98
 paginate: true
 ---
 

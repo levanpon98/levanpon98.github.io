@@ -7,11 +7,7 @@ description: >-
 image: >-
   https://res.cloudinary.com/dzwwhbt1i/image/upload/c_scale,h_300,w_400/v1569224466/limit_theorems_mkcxcz.png
 category: limittheorems
-tags:
-  - probability
-  - statistics
-  - limittheorems
-author: levanpon
+author: levanpon98
 paginate: true
 ---
 

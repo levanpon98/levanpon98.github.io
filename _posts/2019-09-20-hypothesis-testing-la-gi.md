@@ -7,10 +7,7 @@ description: >-
 image: >-
   https://res.cloudinary.com/dzwwhbt1i/image/upload/c_scale,w_400/v1569086067/aid1345372-v4-728px-Calculate-Probability-Step-2-Version-5_tnweks.jpg
 category: statistics
-tags:
-  - probability
-  - statistics
-author: levanpon
+author: levanpon98
 paginate: false
 ---
 

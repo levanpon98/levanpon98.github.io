@@ -7,10 +7,7 @@ description: >-
 image: >-
   https://res.cloudinary.com/dzwwhbt1i/image/upload/c_scale,h_300,w_400/v1569008243/1200px-Normal_Distribution_PDF.svg_w2r9gl.png
 category: distributions
-tags:
-  - probability
-  - distributions
-author: levanpon
+author: levanpon98
 paginate: true
 ---
 
