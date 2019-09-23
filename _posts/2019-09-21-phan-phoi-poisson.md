@@ -19,8 +19,41 @@ paginate: true
 
 Phân phối Poisson là một phân phối xác suất rời rạc. Nó khác với các phân phối xác suất rời rạc khác ở chỗ thông tin cho biết không phải là xác suất để một sự kiện (event) xảy ra (thành công) trong một lần thử như trong phân phối Bernoulli, hay là số lần mà sự kiện đó xảy ra trong n lần thử như trong phân phối nhị thức, mà chính là trung bình số lần xảy ra thành công của một sự kiện trong một khoảng thời gian nhất định. Giá trị trung bình này được gọi là **lamda**, ký hiệu là $$\displaystyle \lambda$$.
 
-### 2. Công thức
+Hàm mật độ của phân phối Poisson có dạng: 
 
+$$
+f(x) = 
+\begin{cases}
+    e^{-\mu} \frac{\mu^x} {x!}      & \quad \text{khi } x = 0,1,...,n,...\\
+    0  & \quad \text{khi } x \ne 0,1,...,n,...
+  \end{cases}
+$$
+
+**Chứng minh công thức:** Cho phân phối Binomial với p là xác suất đạt được chính xác k lần thành công trong N lần thử nghiệm , ta có:
+
+$$
+  	C_N^k p^k (1 - p)^{N-k} = \frac{N!} {k!(N - k)!} p^k(1-p)^{N-k}
+$$
+
+Với $$\mu = Np$$ không đổi, khi $$N \to \infty$$ ta có
+
+$$
+ \begin{array}
+  	\lim\limits_{N \to \infty}  C_N^k p^k (1 - p)^{N-k} &=& \lim\limits_{N \to \infty} \frac{N!} {k!(N - k)!} p^k(1-p)^{N-k} \\
+  	&=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {k!} \left(\frac{\mu}{N}\right)^k \left(1 - \frac{\mu}{N}\right)^{N - k} \\
+  	&=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {k!} \left(\frac{\mu}{N}\right)^k \left(1 - \frac{\mu}{N}\right)^N \left(1 - \frac{\mu}{N}\right)^{-k} \\
+  	&=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {N^k} \frac{\mu^k}{k!} \left(1 - \frac{\mu}{N}\right)^N \left(1 - \frac{\mu}{N}\right)^{-k} \\
+  	&=& 1 \times \frac{\mu^k}{k!} \times e^{-\mu} \times 1
+  \end {array}
+$$
+
+Từ đó suy ra 
+
+$$
+	C_N^k p^k (1 - p)^{N-k} \equiv e^{-\mu} \frac{\mu^k} {k!}
+$$
+
+$$\implies$$ Nếu $$ X \sim B(N;p)$$, trong đó p đủ nhỏ và $$N$$ đủ lớn, thì $$X$$ được xem như có phân phối Poisson $$P(\mu)$$, với $$\mu = Np$$
 
 ### 3. Ứng dụng
 

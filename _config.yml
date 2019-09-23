@@ -1,6 +1,6 @@
 # Site Settings
 name: BDS
-title: Become Data Science
+title: LVP - Con đường trở thành Data Scientist
 description: Đây là trang web nhằm chia sẽ những kiến thức để trở thành một Data Scientist
 tags:
   - datascience
@@ -9,7 +9,7 @@ tags:
   - statistics
   - probability
   - python
-email: levanpon98@gmail.com
+email: levanpon1009@gmail.com
 disqus_username: p_n_l
 show_hero: false
 
