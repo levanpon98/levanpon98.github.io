@@ -39,7 +39,7 @@ Với $$\mu = Np$$ không đổi, khi $$N \to \infty$$ ta có
 
 $$
  \begin{array}
-  	\lim\limits_{N \to \infty}  C_N^k p^k (1 - p)^{N-k} &=& \lim\limits_{N \to \infty} \frac{N!} {k!(N - k)!} p^k(1-p)^{N-k} \\
+  	\lim\limits_{N \to \infty} C_N^k p^k (1 - p)^{N-k} &=& \lim\limits_{N \to \infty} \frac{N!} {k!(N - k)!} p^k(1-p)^{N-k} \\
   	&=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {k!} \left(\frac{\mu}{N}\right)^k \left(1 - \frac{\mu}{N}\right)^{N - k} \\
   	&=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {k!} \left(\frac{\mu}{N}\right)^k \left(1 - \frac{\mu}{N}\right)^N \left(1 - \frac{\mu}{N}\right)^{-k} \\
   	&=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {N^k} \frac{\mu^k}{k!} \left(1 - \frac{\mu}{N}\right)^N \left(1 - \frac{\mu}{N}\right)^{-k} \\
@@ -47,10 +47,17 @@ $$
   \end {array}
 $$
 
+$$
+ \begin{array}
+  	\lim\limits_{N \to \infty} C_N^k p^k (1 - p)^{N-k} &=& \lim\limits_{N \to \infty} \frac{N!} {k!(N - k)!} p^k(1-p)^{N-k} \\
+  
+  \end {array}
+$$
+
 Từ đó suy ra 
 
 $$
-	C_N^k p^k (1 - p)^{N-k} \equiv e^{-\mu} \frac{\mu^k} {k!}
+	C_N^k p^k (1 - p)^{N-k} \approx e^{-\mu} \frac{\mu^k} {k!}
 $$
 
 $$\implies$$ Nếu $$ X \sim B(N;p)$$, trong đó p đủ nhỏ và $$N$$ đủ lớn, thì $$X$$ được xem như có phân phối Poisson $$P(\mu)$$, với $$\mu = Np$$
