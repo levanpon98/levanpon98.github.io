@@ -40,9 +40,9 @@ two_columns_layout: false
 
 
 # Advanced Settings
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://becomedatascientist.github.io" # the base hostname & protocol for your site
-google_analytics: "UA-148427154-1"
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "levanpon98.github.io" # the base hostname & protocol for your site
+google_analytics: "UA-148370931-1"
 language: "en"
 
 
