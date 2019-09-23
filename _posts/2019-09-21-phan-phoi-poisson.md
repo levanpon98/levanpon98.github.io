@@ -49,14 +49,12 @@ $$
 
 $$
   \begin{array}
-    \lim\limits_{N \to \infty} C_N^k p^k (1 - p)^{N-k} &=& \lim\limits_{N \to \infty} \frac{N!} {k!(N - k)!} p^k(1-p)^{N-k} \\
-  	&=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {k!} \left(\frac{\mu}{N}\right)^k \left(1 - \frac{\mu}{N}\right)^{N - k} \\
-  	&=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {k!} \left(\frac{\mu}{N}\right)^k \left(1 - \frac{\mu}{N}\right)^N \left(1 - \frac{\mu}{N}\right)^{-k} \\
-  	&=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {N^k} \frac{\mu^k}{k!} \left(1 - \frac{\mu}{N}\right)^N \left(1 - \frac{\mu}{N}\right)^{-k} \\
-  	&=& 1 \times \frac{\mu^k}{k!} \times e^{-\mu} \times 1
+    \mathcal{F}_f^{-1}[P_X(f)](x) &=& \int_{-\infty}^{\infty} e^{2\pi i f X}P(X)d X \\
+    &=& \int_{-\infty}^{\infty} \displaystyle\sum_{n=0}^{\infty} \frac{(2\pi if X)^n} {n!} P(X) d X \\
+    &=& \displaystyle\sum_{n=0}^{\infty} \frac{(2\pi if)^n} {n!} \int_{-\infty}^{\infty} X^n P(X) d X \\
+    &=& \displaystyle\sum_{n=0}^{\infty} \frac{(2\pi if)^n} {n!} \langle X^n \rangle
   \end {array}
 $$
-
 
 Từ đó suy ra 
 
