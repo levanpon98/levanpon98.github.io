@@ -1,7 +1,7 @@
 ---
 date: 2019-05-16 23:48:05
 layout: post
-title: Phân phối rời rạc (Phần 1) - Phân phối Bernoulli
+title: Phân phối rời rạc (Phần 2) - Phân phối Bernoulli
 description: >-
   Bài viết này sẽ giới thiệu về Phân phối Bernoulli
 image: >-
@@ -9,7 +9,6 @@ image: >-
 category: distributions
 tags:
   - probability
-  - statistics
   - distributions
 author: levanpon
 paginate: true

@@ -9,7 +9,6 @@ image: >-
 category: distributions
 tags:
   - probability
-  - statistics
   - distributions
 author: levanpon
 paginate: true
