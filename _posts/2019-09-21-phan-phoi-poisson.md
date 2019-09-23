@@ -32,14 +32,14 @@ $$
 **Chứng minh công thức:** Cho phân phối Binomial với p là xác suất đạt được chính xác k lần thành công trong N lần thử nghiệm , ta có:
 
 $$
-  	C_N^k p^k (1 - p)^{N-k} = \frac{N!} {k!(N - k)!} p^k(1-p)^{N-k}
+  P_p(k|N) = C_N^k p^k (1 - p)^{N-k} = \frac{N!} {k!(N - k)!} p^k(1-p)^{N-k} 
 $$
 
 Với $$\mu = Np$$ không đổi, khi $$N \to \infty$$ ta có
 
 $$
  \begin{array}
-  	\lim\limits_{N \to \infty} \frac{N!} {k!(N - k)!} p^k(1-p)^{N-k} &=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {k!} \left(\frac{\mu}{N}\right)^k \left(1 - \frac{\mu}{N}\right)^{N - k} \\
+  	\lim\limits_{N \to \infty} P_p(k|N) &=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {k!} \left(\frac{\mu}{N}\right)^k \left(1 - \frac{\mu}{N}\right)^{N - k} \\
   	&=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {k!} \left(\frac{\mu}{N}\right)^k \left(1 - \frac{\mu}{N}\right)^N \left(1 - \frac{\mu}{N}\right)^{-k} \\
   	&=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {N^k} \frac{\mu^k}{k!} \left(1 - \frac{\mu}{N}\right)^N \left(1 - \frac{\mu}{N}\right)^{-k} \\
   	&=& 1 \times \frac{\mu^k}{k!} \times e^{-\mu} \times 1
@@ -54,7 +54,7 @@ $$
 
 $$\implies$$ Nếu $$ X \sim B(N;p)$$, trong đó p đủ nhỏ và $$N$$ đủ lớn, thì $$X$$ được xem như có phân phối Poisson $$P(\mu)$$, với $$\mu = Np$$
 
-### 3. Ứng dụng
+### 2. Ứng dụng
 
 Phân phối Poisson được áp dụng cho nhiều hiện tượng (có tính rời rạc) (nghĩa là số lần xuất hiện trong một khoảng (thời gian, không gian) cho trước đó phải là số nguyên 0, 1, 2, 3,...) với xác suất để sự kiện (hiện tượng) đó xảy ra là không đổi trong suốt khoảng (thời gian, không gian) đó.
 
