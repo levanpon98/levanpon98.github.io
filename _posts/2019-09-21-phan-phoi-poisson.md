@@ -39,7 +39,7 @@ Với $$\mu = Np$$ không đổi, khi $$N \to \infty$$ ta có
 
 $$
  \begin{array}
- 	\mathrm{P}_{\mu}(k) = \lim\limits_{N \to \infty} P_p(k|N) \\
+ 	\mathrm{P}_{\mu}(k) &=& \lim\limits_{N \to \infty} P_p(k|N) \\
   	&=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {k!} \left(\frac{\mu}{N}\right)^k \left(1 - \frac{\mu}{N}\right)^{N - k} \\
   	&=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {k!} \left(\frac{\mu}{N}\right)^k \left(1 - \frac{\mu}{N}\right)^N \left(1 - \frac{\mu}{N}\right)^{-k} \\
   	&=& \lim\limits_{N \to \infty} \frac{N(N - 1) \cdots (N - k + 1)} {N^k} \frac{\mu^k}{k!} \left(1 - \frac{\mu}{N}\right)^N \left(1 - \frac{\mu}{N}\right)^{-k} \\
@@ -55,7 +55,7 @@ $$
 
 $$\implies$$ Nếu $$ X \sim B(N;p)$$, trong đó p đủ nhỏ và $$N$$ đủ lớn, thì $$X$$ được xem như có phân phối Poisson $$P(\mu)$$, với $$\mu = Np$$
 
-### 2. Xấp xỉ về phân phối chuẩn
+### 2. Mối liên hệ với phân phối chuẩn
 
 Phân phối Poisson $$P(\mu)$$ có thể xấp xỉ về phân phối chuẩn nếu $$\mu$$ lớn
 
