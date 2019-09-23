@@ -49,7 +49,7 @@ $$
 
 $$
  \begin{array}
-  	\lim\limits_{N \to \infty} C_N^k p^k (1 - p)^{N-k} &=& \lim\limits_{N \to \infty} \frac{N!} {k!(N - k)!} p^k (1-p)^{N-k} \\
+  	\lim\limits_{N \to \infty} C_N^k p^k (1 - p)^{N-k}
   \end{array}
 $$
 
