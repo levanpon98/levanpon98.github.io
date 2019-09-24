@@ -13,7 +13,7 @@ paginate: true
 
 ### 1. Định nghĩa
 
-Phân phối Poisson là một phân phối xác suất rời rạc. Nó khác với các phân phối xác suất rời rạc khác ở chỗ thông tin cho biết không phải là xác suất để một sự kiện (event) xảy ra (thành công) trong một lần thử như trong phân phối Bernoulli, hay là số lần mà sự kiện đó xảy ra trong n lần thử như trong phân phối Binomial, mà chính là trung bình số lần xảy ra thành công của một sự kiện trong một khoảng thời gian nhất định.
+Phân phối Poisson là một phân phối xác suất rời rạc. Nó khác với các phân phối xác suất rời rạc khác ở chỗ thông tin cho biết không phải là xác suất để một sự kiện (event) xảy ra (thành công) trong một lần thử như trong phân phối Bernoulli, hay là xác suất mà sự kiện đó xảy ra trong n lần thử như trong phân phối Binomial, mà chính là trung bình số lần xảy ra thành công của một sự kiện trong một khoảng thời gian nhất định.
 
 Hàm mật độ của phân phối Poisson có dạng: 
 

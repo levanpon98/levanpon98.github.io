@@ -1,5 +1,5 @@
 ---
-date: 2019-08-05
+date: 2019-08-07
 layout: post
 title: Phân phối rời rạc - Phân phối Binomial
 description: >-
