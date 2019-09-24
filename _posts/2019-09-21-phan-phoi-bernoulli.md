@@ -29,7 +29,7 @@ $$P(n) = p^n(1 - p)^{1 - n}$$
 
 ### 2. Tính chất
 
-- Kỳ vọng: \$$\sigma^2 = p(1 - p)$$
-- Phương sai: \$$\mu = p$$
+- Kỳ vọng: \$$\mu = p$$
+- Phương sai: \$$\sigma^2 = p(1 - p)$$
 - Hệ số đối xứng: \$$\gamma_1 = \frac{1- 2p} {\sqrt{p(1 - p)}}$$
 - Hệ số nhọn: \$$\gamma_2 = \frac{6p^2 -6p + 1} {p(1 - p)}$$
