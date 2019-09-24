@@ -1,7 +1,7 @@
 ---
 date: 2019-08-07
 layout: post
-title: Discrete Distribution -  Distribution
+title: Discrete Distribution - Binomial Distribution
 description: >-
   Bài viết này sẽ giới thiệu về Phân phối Binomial
 image: >-
@@ -16,18 +16,18 @@ paginate: true
 Phân phối Binomial $$X \sim Bin(n, p)$$ là phân phối rời rạc cho biết xác suất xảy ra đúng $$n$$ lần trong $$N$$ lần thử nghiệm (trong đó chỉ có 2 giá trị nhận được là 1 và 0, xác suất đạt được 1 là $$p$$, 0 là $$q = 1 - p$$). Từ đó ta có công thức:
 
 $$P_p(n|N) = \left(
-    \begin{array}{c}
+    \begin{array}
       N \\
       n
     \end{array}
     \right) p^n (1 - p)^{N - n} $$
 
-Trong đó $$left(\!
-    \begin{array}{c}
+Trong đó $$\left(
+    \begin{array}
       N \\
       n
     \end{array}
-  \!\right)$$ được gọi là hệ số Binomial. Như vậy ta thấy phép thử Bernoulli được coi là một trường hợp đặt biệt của phân phối Binomial với $$n = 1$$, nên phân phối Bernoulli có thể được ký hiệu là $$X \sim Bin(1, p)$$
+    \right) p^n (1 - p)^{N - n} $$ được gọi là hệ số Binomial. Như vậy ta thấy phép thử Bernoulli được coi là một trường hợp đặt biệt của phân phối Binomial với $$n = 1$$, nên phân phối Bernoulli có thể được ký hiệu là $$X \sim Bin(1, p)$$
 
 ### 2. Tính chất
 
