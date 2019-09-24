@@ -1,7 +1,7 @@
 ---
 date: 2019-08-05
 layout: post
-title: Phân phối rời rạc - Phân phối Multinomial
+title: Discrete Distribution - Multinomial Distribution
 description: >-
   Bài viết này sẽ giới thiệu về Phân phối Multinomial
 image: >-
@@ -13,11 +13,19 @@ paginate: true
 
 ### 1. Định nghĩa
 
-Multinomial Distribution là phân phối khái quát của Binomial Distribution, 
+Multinomial Distribution là phân phối khái quát của Binomial Distribution. Với phân phối Binomial thì chỉ có 2 kết quả nhận được đó là 0 hoặc 1, còn đối với Multinomial thì có nhiều hơn 2 kết quả nhận được. 
+
+Như vậy
+- Với số lần thử $$= 1$$ và có 2 kết quả nhận được, ta sẽ dùng phân phối Bernoulli
+- Với số lần thử $$> 1$$ và có 2 kết quả nhận được, ta sẽ sử dụng phân phối Binomial 
+- Với số lần thử $$> 1$$ và có $$> 2$$ kết quả nhận được, ta sẽ sử dụng phân phối Multinomial
+
+Ta có hàm xác suất:
+
+$$P_N(x_1,x_2, \cdots, x_n) = \frac{N!} {x_1!, x_2!, \cdots,x_n!} p_1^{x_1} p_2^{x_2} \cdots p_n^{x_n}$$
+
 
 ### 2. Tính chất
 
-- Kỳ vọng: \$$\mu = p$$
-- Phương sai: \$$\sigma^2 = p(1 - p)$$
-- Hệ số đối xứng: \$$\gamma_1 = \frac{1- 2p} {\sqrt{p(1 - p)}}$$
-- Hệ số nhọn: \$$\gamma_2 = \frac{6p^2 -6p + 1} {p(1 - p)}$$
+- Kỳ vọng: \$$\mu_i = Np_i$$
+- Phương sai: \$$\sigma_i^2 = N p_i (1 - p_i)$$

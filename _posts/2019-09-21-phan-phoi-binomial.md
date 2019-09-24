@@ -1,7 +1,7 @@
 ---
 date: 2019-08-07
 layout: post
-title: Phân phối rời rạc - Phân phối Binomial
+title: Discrete Distribution -  Distribution
 description: >-
   Bài viết này sẽ giới thiệu về Phân phối Binomial
 image: >-
@@ -15,12 +15,12 @@ paginate: true
 
 Phân phối Binomial $$X \sim Bin(n, p)$$ là phân phối rời rạc cho biết xác suất xảy ra đúng $$n$$ lần trong $$N$$ lần thử nghiệm (trong đó chỉ có 2 giá trị nhận được là 1 và 0, xác suất đạt được 1 là $$p$$, 0 là $$q = 1 - p$$). Từ đó ta có công thức:
 
-$$P_p(n|N) = left(\!
+$$P_p(n|N) = \left(
     \begin{array}{c}
       N \\
       n
     \end{array}
-  \!\right) p^n (1 - p)^{N - n} $$
+    \right) p^n (1 - p)^{N - n} $$
 
 Trong đó $$left(\!
     \begin{array}{c}

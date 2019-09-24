@@ -1,7 +1,7 @@
 ---
 date: 2019-08-07
 layout: post
-title: Phân phối rời rạc - Phân phối Negative Binomial
+title: Discrete Distribution - Negative Binomial Distribution
 description: >-
   Bài viết này sẽ giới thiệu về Phân phối Negative Binomial
 image: >-

@@ -1,7 +1,7 @@
 ---
 date: 2019-08-09
 layout: post
-title: Phân phối rời rạc - Phân phối Poisson
+title: Discrete Distribution - Poisson Distribution
 description: >-
   Bài viết này sẽ giới thiệu về Phân phối Poisson
 image: >-

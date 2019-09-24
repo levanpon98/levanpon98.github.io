@@ -1,7 +1,7 @@
 ---
 date: 2019-08-05
 layout: post
-title: Phân phối rời rạc - Phân phối Bernoulli
+title: Discrete Distribution - Bernoulli Distribution
 description: >-
   Bài viết này sẽ giới thiệu về Phân phối Bernoulli
 image: >-

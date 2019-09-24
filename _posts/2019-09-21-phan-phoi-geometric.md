@@ -1,7 +1,7 @@
 ---
 date: 2019-08-07
 layout: post
-title: Phân phối rời rạc - Phân phối Geometric
+title: Discrete Distribution - Geometric Distribution
 description: >-
   Bài viết này sẽ giới thiệu về Phân phối Geometric
 image: >-
