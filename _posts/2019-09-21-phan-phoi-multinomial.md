@@ -1,9 +1,9 @@
 ---
 date: 2019-08-05
 layout: post
-title: Phân phối rời rạc - Phân phối Bernoulli
+title: Phân phối rời rạc - Phân phối Multinomial
 description: >-
-  Bài viết này sẽ giới thiệu về Phân phối Bernoulli
+  Bài viết này sẽ giới thiệu về Phân phối Multinomial
 image: >-
   https://res.cloudinary.com/dzwwhbt1i/image/upload/c_scale,h_300,w_400/v1569262338/poisson_kecvc9.png
 category: distributions
@@ -13,7 +13,7 @@ paginate: true
 
 ### 1. Định nghĩa
 
-
+Multinomial Distribution là phân phối khái quát của Binomial Distribution, 
 
 ### 2. Tính chất
 

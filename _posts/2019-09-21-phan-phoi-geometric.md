@@ -13,7 +13,7 @@ paginate: true
 
 ### 1. Định nghĩa
 
-Phân phối Geometric $$X \sim Geo(p)$$ là phân phối xác suất rời rạc của xác suất suất hiện lần đầu tiên của sự kiện $$A$$ trong phép thử Bernoulli. $$p$$ là xác suất của sự kiện $$A$$ trong mỗi phép thử, với $$0 < p < 1$$.
+Phân phối Geometric $$X \sim Geo(p)$$ là phân phối xác suất rời rạc cho biết xác suất suất hiện lần đầu tiên của sự kiện $$A$$ trong phép thử Bernoulli. $$p$$ là xác suất của sự kiện $$A$$ trong mỗi phép thử, với $$0 < p < 1$$.
 
 Hàm mật độ xác suất:
 
