@@ -17,17 +17,17 @@ Phân phối Binomial $$X \sim Bin(n, p)$$ là phân phối rời rạc cho bi�
 
 $$P_p(n|N) = \left(
     \begin{array}
-      N \\
+      \mathrm{N} \\
       n
     \end{array}
     \right) p^n (1 - p)^{N - n} $$
 
 Trong đó $$\left(
     \begin{array}
-      N \\
+      \mathrm{N} \\
       n
     \end{array}
-    \right) p^n (1 - p)^{N - n} $$ được gọi là hệ số Binomial. Như vậy ta thấy phép thử Bernoulli được coi là một trường hợp đặt biệt của phân phối Binomial với $$n = 1$$, nên phân phối Bernoulli có thể được ký hiệu là $$X \sim Bin(1, p)$$
+    \right)$$ được gọi là hệ số Binomial. Như vậy ta thấy phép thử Bernoulli được coi là một trường hợp đặt biệt của phân phối Binomial với $$n = 1$$, nên phân phối Bernoulli có thể được ký hiệu là $$X \sim Bin(1, p)$$
 
 ### 2. Tính chất
 
