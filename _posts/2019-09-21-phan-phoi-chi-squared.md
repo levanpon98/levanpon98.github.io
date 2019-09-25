@@ -13,9 +13,10 @@ paginate: true
 
 ### 1. Định nghĩa Chi-Squared Distribution
 
+Phân phối Chi-Squared là phân phối của tổng bình phương độ lệch chuẩn với tham số $$r$$ là degree of freedom (tạm dịch: Bậc tự do). 
 ### 2. Tính chất
 
-- Kỳ vọng: \$$\mu = 0$$
-- Phương sai: \$$\sigma^2 = \frac {r} {r - 2}$$
-- Hệ số đối xứng: \$$\gamma_1 = 0$$
-- Hệ số nhọn: \$$\gamma_2 = \frac{6} {r - 4}$$
+- Kỳ vọng: \$$\mu = r$$
+- Phương sai: \$$\sigma^2 = 2r$$
+- Hệ số đối xứng: \$$\gamma_1 = 2 \sqrt{\frac{1} {r}}$$
+- Hệ số nhọn: \$$\gamma_2 = \frac{12} {r}$$
