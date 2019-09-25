@@ -27,7 +27,6 @@ paginate: true
 	- [3.5. Trung vị](#tv)
 	- [3.6. Hệ số đối xứng và hệ số nhọn](#hsdx)
 	- [3.7. Mômen](#mm)
-- [4. Kết luận](#ketluan)
 
 ### 1. Biến ngẫu nhiên <a name="bien_ngau_nhien"></a>
 
@@ -315,11 +314,3 @@ $$m_k = E(X^k)$$
 Và kỳ vọng của $$(X - \mu_X)^k$$ được gọi là *mômen quy tâm* cấp k của $$X$$, ký hiệu $$t_k$$
 $$t_k = E\left((X - \mu_X)^k\right)$$ 
 Chú ý rằng $$m_1 = \mu_X \text{và } t_2 = \sigma_X^2$$
-
-### 4.Kết luận <a name="ketluan"></a>
-Bài này mình đã trình bày về một khái niệm rất quan trọng của xác suất thống kê là biến ngẫu nhiên cũng như cách xác định một biến ngẫu nhiên rời rạc.
-
-Bên cạnh đó bài viết còn giới thiệu khái niệm về hàm phân phối tích lũy, hàm mật độ xác suất và phương trình của mỗi hàm với biến ngẫu nhiên là liên tục hoặc rời rạc. Định nghĩa một số tham số đặc trưng quan trọng như: *kì vọng* và *phương sai*
-Tuy nhiên trong phần này mình mới chỉ đề cập tới biến ngẫu nhiên 1 chiều $$(X \in \mathbb{R})$$. Nhưng trong thực tế ta thường xuyên phải làm việc với biến ngẫu nhiên nhiều chiều $$(X \in \mathbb{R}^n)$$, đó chính là **Vector ngẫu nhiên**. **Vector ngẫu nhiên** mình sẽ giới thiệu trong bài tiếp theo nhé. 
-
-*Còn bây giờ, nếu có thắc mắc hay góp ý gì thì đừng quên để lại bình luận phía dưới cho mình nhé!*
