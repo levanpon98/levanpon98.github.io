@@ -9,6 +9,7 @@ image: >-
 category: distributions
 author: levanpon98
 paginate: true
+comments: true
 ---
 
 ### 1. Định nghĩa Student's t Distribution
@@ -19,9 +20,20 @@ Hàm mật độ:
 
 $$
  \begin{array}
- 	f(x) &=& \frac{\Gamma[\frac{1}{2} (r + 1)]} {\sqrt{r\pi} \Gamma(\frac{r} {2}) \left(\frac{r + r^2} {r}\right)^{\frac{r + 1}{2}}} \\
+ 	\mathrm{f}(t) &=& \frac{\Gamma[\frac{1}{2} (r + 1)]} {\sqrt{r\pi} \Gamma(\frac{r} {2}) \left(\frac{r + r^2} {r}\right)^{\frac{r + 1}{2}}} \\
  	&=& \frac{ \Gamma[\frac{r} {2} + \frac{1} {2}] \times \Gamma(\frac{1} {2})} {\sqrt{r\pi} \Gamma(\frac{r} {2}) \Gamma(\frac{1} {2}) \left(\frac{r + r^2} {r}\right)^{\frac{r + 1}{2}} } \\
  	&=& \frac{\Gamma(\frac{1} {2}) \left(\frac{r} {r + r^2}\right)^{\frac{r + 1}{2}} } {\sqrt{r\pi} B(\frac{r} {2}, \frac{1} {2})} \\
  	&=& \frac{\Gamma(\frac{1} {2})} {\sqrt{r} B(\frac{r} {2}, \frac{1} {2})}
   \end{array}
 $$
+
+### 2. Tính chất
+
+- Kỳ vọng: \$$\mu = 0$$
+- Phương sai: \$$\sigma^2 = \frac {r} {r - 2}$$
+- Hệ số đối xứng: \$$\gamma_1 = 0$$
+- Hệ số nhọn: \$$\gamma_2 = \frac{6} {r - 4}$$
+
+### 3. Ứng dụng 
+
+Phân phối Student được dùng trong thống kê suy luận phương sai tổng thể khi thổng thể được giả thiết là có phân phối chuẩn, đặc biệt khi cỡ mẫu nhỏ. Ngoài ra ta còn dùng phân phối Student trong kiểm định giả thiết về trung bình khi phương sai tổng thể chưa biết,.. 
