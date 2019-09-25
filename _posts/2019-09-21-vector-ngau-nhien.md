@@ -1,7 +1,7 @@
 ---
 date: 2019-09-22 00:16:10
 layout: post
-title: Vector ngẫu nhiên
+title: Random Vector
 description: >-
   Bài viết này sẽ giới thiệu về vector ngẫu nhiên
 image: >-

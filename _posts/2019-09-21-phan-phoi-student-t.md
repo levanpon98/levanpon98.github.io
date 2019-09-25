@@ -19,9 +19,9 @@ Hàm mật độ:
 
 $$
  \begin{array}
- 	f(x) &=& \frac{\Gamma[\frac{1}{2} (r + 1)]} {/sqrt{r\pi} \Gamma(\frac{r} {2}) \left(\frac{r + r^2} {r}\right)^{\frac{r + 1}{2}}}
- 	&=& \frac{ \Gamma[\frac{r} {2} + \frac{1} {2}] \times \Gamma(\frac{1} {2})} {/sqrt{r\pi} \Gamma(\frac{r} {2}) \Gamma(\frac{1} {2}) \left(\frac{r + r^2} {r}\right)^{\frac{r + 1}{2}} }
- 	&=& \frac{\Gamma(\frac{1} {2}) \left(\frac{r} {r + r^2}\right)^{\frac{r + 1}{2}} } {/sqrt{r\pi} B(\frac{r} {2}, \frac{1} {2})}
- 	&=& \frac{\Gamma(\frac{1} {2})} {/sqrt{r} B(\frac{r} {2}, \frac{1} {2})}
+ 	f(x) &=& \frac{\Gamma[\frac{1}{2} (r + 1)]} {\sqrt{r\pi} \Gamma(\frac{r} {2}) \left(\frac{r + r^2} {r}\right)^{\frac{r + 1}{2}}} \\
+ 	&=& \frac{ \Gamma[\frac{r} {2} + \frac{1} {2}] \times \Gamma(\frac{1} {2})} {\sqrt{r\pi} \Gamma(\frac{r} {2}) \Gamma(\frac{1} {2}) \left(\frac{r + r^2} {r}\right)^{\frac{r + 1}{2}} } \\
+ 	&=& \frac{\Gamma(\frac{1} {2}) \left(\frac{r} {r + r^2}\right)^{\frac{r + 1}{2}} } {\sqrt{r\pi} B(\frac{r} {2}, \frac{1} {2})} \\
+ 	&=& \frac{\Gamma(\frac{1} {2})} {\sqrt{r} B(\frac{r} {2}, \frac{1} {2})}
   \end{array}
 $$

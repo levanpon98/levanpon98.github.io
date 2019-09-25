@@ -1,7 +1,7 @@
 ---
 date: 2019-09-21 23:48:05
 layout: post
-title: Biến ngẫu nhiên và phân phối xác suất
+title: Random Variable
 description: >-
   Bài viết này sẽ giới thiệu về biến ngẫu nhiên và phân phối xác suất
 image: >-
