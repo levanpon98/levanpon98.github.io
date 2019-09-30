@@ -20,6 +20,7 @@ Trong bài viết này, mình sẽ giải thích cơ chế hoạt động của 
 
 Chúng ta cùng bắt đầu với RNN's, đây là một mạng có bộ nhớ ngắn hạn. Nhưng nếu đoạn văn đủ dài, thì thật sự khó để RNN's có thể nhớ toàn bộ thông tin từ bước đầu tiên đến bước cuối cùng. Vì vậy, nếu bạn đang cố gắng xử lí một đoạn văn để thực hiện một số dự đoán, thì rất có thể RNN's đã bỏ qua một số thông tin ngay từ đầu.
 
+
 Trong quá trình back propagation, RNN's rất dễ gặp phải hiện tượng là **Vanishing Gradients**, đó là hiện tượng mà khi gradients có giá trị nhỏ dần khi đi xuống các layers thấp hơn, thì kết quả của việc cập nhật weights không thay đổi nhiều so với trước đó, khiến chúng không thể hội tụ và mạng sẽ không thu được kết quả tốt.
 
 ![alt text](https://res.cloudinary.com/dzwwhbt1i/image/upload/c_scale,w_901/v1569865527/1_PYiQa_bNzM8ugYz_D1yvgw_uq3uwc.png "Vanishing Gradients")
