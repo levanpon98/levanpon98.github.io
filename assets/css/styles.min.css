@@ -4,3 +4,4 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 /*# sourceMappingURL=styles.min.css.map */
 .post-content li{padding: 0}
 .post-content ol,.post-content ul,.post-content table,.post-content p{margin-top: 0;margin-bottom: 0}
+img + em {font-style: normal;display: inherit;text-align: center;font-size: 70%;}
