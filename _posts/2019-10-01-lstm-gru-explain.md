@@ -144,7 +144,6 @@ $$
 ![alt text](https://res.cloudinary.com/dzwwhbt1i/image/upload/v1569866519/1_VOXRGhOShoWWks6ouoDN3Q_dyfifs.gif "tanh activation")
 
 #### Code demo
-<p>
 
 ```python
 #single lstm cell
@@ -189,7 +188,7 @@ def lstm_cell(batch_dataset, prev_activation_matrix, prev_cell_matrix, parameter
     
     return lstm_activations,cell_memory_matrix,activation_matrix
 ```
-</p>
+
 
 ### GRU
 
