@@ -82,8 +82,8 @@ $$idf(t, D) = log \frac{|D|} {|{d \in D : t \in d}|}$$
 
 Trong đó:
 - $$idf(t, D):$$ là giá trị idf của từ $$t$$ trong tập văn bản
-- $$|D|:$$ Tổng số văn bản trong tập $$D$$
-- $$|{d \in D : t \in d}|: $$ Thể hiện số văn bản trong tập $$D$$ có chứa từ $$t$$
+- $$D:$$ Tổng số văn bản trong tập $$D$$
+- $${d \in D : t \in d}: $$ Thể hiện số văn bản trong tập $$D$$ có chứa từ $$t$$
 
 Cơ số logarit trong công thức này không thay đổi giá trị idf của từ mà chỉ thu hẹp khoảng giá trị của từ đó. Vì thay đổi cơ số sẽ dẫn đến việc giá trị của các từ thay đổi bởi một số nhất định và tỷ lệ giữa các trọng lượng với nhau sẽ không thay đổi. (nói cách khác, thay đổi cơ số sẽ không ảnh hưởng đến tỷ lệ giữa các giá trị IDF). Việc sử dụng logarit nhằm giúp giá trị tf-idf của một từ nhỏ hơn, do chúng ta có công thức tính tf-idf của một từ trong 1 văn bản là tích của tf và idf của từ đó.
 
