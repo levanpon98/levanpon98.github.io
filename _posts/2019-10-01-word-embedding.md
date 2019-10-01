@@ -36,6 +36,7 @@ Mình sẽ đi chi tiết vào từng loại
 
 Ý tưởng chính của phương pháp này là thu thập một tập hợp các câu, văn bản, bài viết rồi sau đó đếm sự xuất hiện của mỗi từ trong đó. 
 
+**Code demo**
 ```python
 >>> from sklearn.feature_extraction.text import CountVectorizer
 >>> corpus = [
@@ -93,7 +94,7 @@ $$tfidf(t, d, D) = tf(t, d) x idf(t, D)$$
 
 Những từ có giá trị TF-IDF cao là những từ xuất hiện nhiều trong văn bản này, và xuất hiện ít trong các văn bản khác. Việc này giúp lọc ra những từ phổ biến và giữ lại những từ có giá trị cao (từ khoá của văn bản đó).
 
-**Code:**
+**Code demo**
 
 ```python 
 import math
@@ -159,4 +160,48 @@ pd.DataFrame([tfidfDocA, tfidfDocB])
 ```
 
 ###### Co-occurrence Matrix
+
+Tuy nhiên, nhược điểm của cả hai phương pháp trên chính là việc nó chỉ chú trọng đến tần số xuất hiện của một từ, dẫn tới nó hầu như không mang ý nghĩa gì về mặt ngữ cảnh, Co-occurrence Matrix phần nào giải quyết vấn đề đó. Co-occurrence Matrix có ưu điểm là bảo tồn mối quan hệ ngữ nghĩa giữa các từ, được xây dựng dựa trên số lần xuất hiện của các cặp từ trong Context Window. Một Context Window được xác định bởi kích thước và hướng của nó. Hình dưới đây là một ví dụ của Context Window:
+
+![alt text](https://images.viblo.asia/84ebc2ec-6880-4aef-aa50-715ea9dab714.PNG "LSTM")
+
+Thông thường, Co-occurrence Matrix là một ma trận vuông đối xứng, mỗi hàng hoặc mỗi cột sẽ chính là vector biểu thị của từ tương ứng. Tiếp tục ví dụ trên ta sẽ có ma trận Co-occurrence Matrix:
+
+![alt text](https://images.viblo.asia/14e51bd2-f2c6-49f9-82bc-19dc63cdbf66.PNG "LSTM")
+
+**Code**
+
+```python
+
+from nltk.tokenize import word_tokenize
+from itertools import combinations
+from collections import Counter
+
+sentences = ['John is not fat', 'John is thin']
+vocab = set(word_tokenize(' '.join(sentences)))
+print('Vocabulary:\n',vocab,'\n')
+token_sent_list = [word_tokenize(sen) for sen in sentences]
+print('Each sentence in token form:\n',token_sent_list,'\n')
+
+co_occ = {ii:Counter({jj:0 for jj in vocab if jj!=ii}) for ii in vocab}
+k=2
+
+for sen in token_sent_list:
+    for ii in range(len(sen)):
+        if ii < k:
+            c = Counter(sen[0:ii+k+1])
+            del c[sen[ii]]
+            co_occ[sen[ii]] = co_occ[sen[ii]] + c
+        elif ii > len(sen)-(k+1):
+            c = Counter(sen[ii-k::])
+            del c[sen[ii]]
+            co_occ[sen[ii]] = co_occ[sen[ii]] + c
+        else:
+            c = Counter(sen[ii-k:ii+k+1])
+            del c[sen[ii]]
+            co_occ[sen[ii]] = co_occ[sen[ii]] + c
+
+co_occ = {ii:dict(co_occ[ii]) for ii in vocab}
+display(co_occ)
+```
 
