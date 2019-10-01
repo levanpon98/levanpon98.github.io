@@ -124,7 +124,7 @@ $$
 
 Bây giờ chúng ta nên có đủ thông tin để tính toán cell state. Đầu tiên, cell state được nhân theo chiều của forget vector. Điều này sẽ dẫn đến một số dữ liệu sẽ bị mất đi nếu nó được nhân với các giá trị gần 0. Sau đó, mình sẽ lấy đầu ra từ cổng input và thực hiện bổ sung, cập nhật cell state thành các giá trị mới mà mạng neural thấy có liên quan. Điều đó cho chúng ta một cell state mới.
 
-$$C_t = f_t \* C_{t - 1} + i_t \* \tilde{C}_t$$
+$$C_t = f_t * C_{t - 1} + i_t * \tilde{C}_t$$
 
 
 ![alt text](https://res.cloudinary.com/dzwwhbt1i/image/upload/v1569866519/1_S0rXIeO_VoUVOyrYHckUWg_on8dwa.gif "tanh activation")
@@ -137,13 +137,14 @@ Cuối cùng chúng ta có cổng output, cổng này sẽ quyết định thôn
 - Nhận 2 vector nhận được lại với nhau, ta được vector output đã được lọc
 
 $$
-o_t = \sigmoid(W_o [h_{t - 1}, x_t] + b_o) \\
-h_t = o_t \* \tanh(C_t)
+o_t = \sigma(W_o [h_{t - 1}, x_t] + b_o) \\
+h_t = o_t * \tanh(C_t)
 $$
 
 ![alt text](https://res.cloudinary.com/dzwwhbt1i/image/upload/v1569866519/1_VOXRGhOShoWWks6ouoDN3Q_dyfifs.gif "tanh activation")
 
 #### Code demo
+<p>
 
 ```python
 #single lstm cell
@@ -188,6 +189,7 @@ def lstm_cell(batch_dataset, prev_activation_matrix, prev_cell_matrix, parameter
     
     return lstm_activations,cell_memory_matrix,activation_matrix
 ```
+</p>
 
 ### GRU
 
