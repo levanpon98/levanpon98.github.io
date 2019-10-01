@@ -90,7 +90,7 @@ Cơ số logarit trong công thức này không thay đổi giá trị idf của
 
 Khi đó công thức tính TF-IDF như sau: 
 
-$$tfidf(t, d, D) = tf(t, d) x idf(t, D)$$
+$$tfidf(t, d, D) = tf(t, d) \times idf(t, D)$$
 
 Những từ có giá trị TF-IDF cao là những từ xuất hiện nhiều trong văn bản này, và xuất hiện ít trong các văn bản khác. Việc này giúp lọc ra những từ phổ biến và giữ lại những từ có giá trị cao (từ khoá của văn bản đó).
 
