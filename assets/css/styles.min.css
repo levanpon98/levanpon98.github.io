@@ -9,6 +9,8 @@ img + em {font-style: normal;display: inherit;text-align: center;font-size: 70%;
 .language-python{
     width: auto;
     max-width: 50rem;
+    max-height: 50rem;
+    overflow: scroll;
     float: none;
     display: block;
     margin-right: auto;

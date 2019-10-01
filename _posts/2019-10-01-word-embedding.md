@@ -96,6 +96,8 @@ Những từ có giá trị TF-IDF cao là những từ xuất hiện nhiều tr
 **Code:**
 
 ```python 
+import math
+import pandas as pd
 
 def computeTF(wordDict, words):
     tfDict = {}
@@ -105,7 +107,7 @@ def computeTF(wordDict, words):
     return tfDict
 
 def computeIDF(docList):
-    import math
+    
     idfDict = {}
     N = len(docList)
     
@@ -153,8 +155,6 @@ idfs = computeIDF([wordDictA, wordDictB])
 tfidfDocA = computeTFIDF(tfdocA, idfs)
 tfidfDocB = computeTFIDF(tfdocB, idfs)
 
-
-import pandas as pd
 pd.DataFrame([tfidfDocA, tfidfDocB])
 ```
 
