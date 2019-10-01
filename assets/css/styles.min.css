@@ -5,3 +5,4 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 .post-content li{padding: 0}
 .post-content ol,.post-content ul,.post-content table{margin-top: 0;margin-bottom: 0}
 img + em {font-style: normal;display: inherit;text-align: center;font-size: 70%;}
+.language-python{font-size: 1.25rem;line-height: 2.5rem;margin: 1.813rem auto 1.813rem;}
