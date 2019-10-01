@@ -11,8 +11,6 @@ author: levanpon98
 paginate: true
 ---
 
-Trong bài viết này, mình sẽ giải thích cơ chế hoạt động của LSTM's và GRU's. Nếu bạn thực sự muốn hiểu cụ thể về 2 networks nổi tiếng thì đây chính là nơi bạn đang tìm.
-
 ![alt text](https://res.cloudinary.com/dzwwhbt1i/image/upload/v1569869055/1_n-IgHZM5baBUjq0T7RYDBw_tpxeja.gif "LSTM")
 
 
