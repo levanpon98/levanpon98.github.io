@@ -1,5 +1,5 @@
 ---
-date: 2019-10-02 00:16:10
+date: 2019-10-02 15:27:10
 layout: post
 title: Cùng code lại Word2Vec
 description: >-
