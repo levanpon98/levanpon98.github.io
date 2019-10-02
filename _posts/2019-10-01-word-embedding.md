@@ -277,3 +277,30 @@ Prediction-based Embedding xây dựng các vector từ dựa vào các mô hìn
 ### CBOW 
 
 Hoạt động dựa trên cách thức là nó sẽ dự đoán xác suất của một từ được đưa ra theo ngữ cảnh (một ngữ cảnh có thể gồm một hoặc nhiều từ), với input là một hoặc nhiều One-hot vector của các từ ngữ cảnh có chiều dài V (với V là độ lớn của từ điển), output sẽ là một vector xác suất cũng với chiều dài V của từ liên quan hoặc còn thiếu, Hidden Layer có chiều dài N, N cũng chính là độ lớn của vector từ biểu thị. Dưới đây là mô hình CBOW với ngữ cảnh là 1 từ đơn:
+
+![alt text](https://images.viblo.asia/5f0356d3-7548-4bf5-8fc3-770f7e9cdc18.PNG "tanh activation")
+
+Về bộ dữ liệu dùng để train, Input sẽ bao gồm các bộ One-hot vectors ngữ cảnh và các One-hot vectors của từ mong muốn.
+
+Về cách thức hoạt động, ban đầu hai ma trận trọng số Input-Hidden Weights Matrix và Hidden-Output Weights Matrix được khởi tạo ngẫu nhiên, Input sẽ được nhân với Input-Hidden Weights Matrix ra được một kết quả gọi là Hidden Activation, kết quả này sẽ được nhân tiếp với Hidden-Output Weights Matrix và cuối cùng được đưa vào một hàm softmax để ra được Output là 1 vector xác suất, Output này sẽ được so sánh với Output mong muốn và tính toán độ lỗi, dựa vào độ lỗi này mà mạng neuron sẽ lan truyền ngược trở lại để cập nhật các giá trị của các ma trận trọng số. Đối với mô hình CBOW nhiều Input, các thức hoạt động là tương tự, chỉ khác ở chỗ các kết quả thu được khi nhân các Input với Input-Hidden Weights Matrix sẽ được lấy trung bình để ra được Hidden Activation cuối cùng. Các trọng số của Hidden-Output Weights Matrix sau khi học xong sẽ được lấy làm biểu diễn của các vector từ.
+
+### Skip-gram
+
+Mô hình Skip-gram có cấu trúc tương tự như CBOW, nhưng mục đích của nó là dự đoán ngữ cảnh của một từ đưa vào. Dưới đây là hình ảnh của mô hình Skip-gram:
+
+![alt text](https://images.viblo.asia/04e715ad-af63-47b0-946a-b9fa54cb8718.PNG "tanh activation")
+
+Về bộ dữ liệu dùng để train cũng như cách thức hoạt động của mô hình Skip-gram hoàn toàn tương tự với mô hình CBOW 1 Input, chỉ khác ở điểm thay vì chỉ có 1 độ lỗi, ta có nhiều độ lỗi do có nhiều vector Output, các độ lỗi này sẽ được tổng hợp lại thành 1 độ lỗi cuối cùng để lan truyền ngược trở lại cập nhật các trọng số. Các trọng số của Input-Hidden Weights Matrix sau khi học xong sẽ được lấy làm biểu diễn của các vector từ.
+
+### CBOW vs Skip-gram
+
+Ưu điểm của CBOW là nó không tốn nhiều bộ nhớ để lưu trữ các ma trận lớn, cũng như do nó có bản chất là xác suất cho nên việc hiện thực được cho là vượt trội hơn so với phương pháp khác, tuy nhiên vẫn còn tồn tại khuyết điểm các từ giống nhau nhưng nghĩa khác nhau vẫn chỉ được biểu diễn bằng 1 vector từ duy nhất.
+
+### Một chút so sánh giữa Word2vec và GloVe
+
+Về bản chất, rõ ràng Word2vec và GloVe khác nhau do thuộc 2 loại Embedding khác nhau nhưng đều bắt nguồn từ Context Window, Word2vec sử dụng Context Window để tạo ra các tập train cho mạng neuron còn GloVe sử dụng nó để tạo ra Co-occurrence Matrix. Để ý kĩ một chút, ta thấy rằng GloVe mang tính “toàn cục” hơn là Word2vec vì GloVe tính toán xác suất từ dựa trên toàn bộ tập dữ liệu còn Word2vec học dựa trên các ngữ cảnh đơn lẻ, cũng chính vì lý do này mà GloVe có trội hơn Word2vec cũng như vài mô hình khác trong một số task về ngữ nghĩa, nhận dạng thực thể có gắn tên,vv… Ngoài ra, GloVe có độ ổn định trung bình tốt hơn Word2vec, độ ổn định ở đây chính là độ biến thiên của kết quả giữa hai lần ta thực hiện việc học với cùng một điều kiện xác định (cùng bộ dữ liệu, cùng tham số, cùng điều kiện phần cứng,…).
+
+
+**Tài liệu tham khảo**
+- https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/
+- https://viblo.asia/p/so-luoc-word-embedding-gDVK2RAeKLj
