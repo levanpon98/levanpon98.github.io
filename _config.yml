@@ -1,93 +1,56 @@
-# Site Settings
-name: BDS
-title: LVP - Con đường trở thành Data Scientist
-description: Đây là trang web nhằm chia sẽ những kiến thức để trở thành một Data Scientist
-tags:
-  - datascience
-  - tensorflow
-  - deeplearning
-  - statistics
-  - probability
-  - python
+title: Become Data Science
+author: Levanpon98
 email: levanpon1009@gmail.com
-disqus_username: p_n_l
-show_hero: false
+description: > # this means to ignore newlines until "show_exerpts:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+show_excerpts: true # set to true to show excerpts on the homepage
 
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+sass:
+  sass_dir: _sass
+plainwhite:
+  name: Adam Denisov
+  tagline: Developer. Designer
+  date_format: "%b %-d, %Y"
+  sitemap: true # set to true to generate sitemap.xml content
 
-# Social Media Settings
-# Remove the item if you don't need it
-github_username: levanpon98
-facebook_username: levanpon12
-twitter_username:
-instagram_username:
-linkedin_username: pon-le-95764014b
-medium_username:
+  # generate social links in footer
+  social_links:
+    # twitter: thelehhman
+    github:  levanpon98
+    linkedIn: in/pon-le-95764014b
+    rss: rss
+    # dribbble: jekyll
+    facebook: levanpon12
+    # flickr:   jekyll
+    # instagram: jekyll
+    # linkedin: jekyll
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
 
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
 
-# Theme Settings
-themeColor: "#ff0a16"
-primaryDark: "#141414"
-accentDark: "#ffffff"
-lightGray: "#f2f2f2"
-texts: "#333333"
-
-
-# Posts Settings
-show_time_bar: false
-show_modal_on_exit: false
-show_modal_on_finish_post: true
-two_columns_layout: false
-
-
-# Advanced Settings
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://levanpon98.github.io/" # the base hostname & protocol for your site
-google_analytics: "UA-148370931-1"
-language: "en"
-
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
 
 # Build settings
-markdown: kramdown
-highlighter: rouge
-permalink: /:title/
-collections:
-  authors:
-    output: true
-paginate_path: "/page/:num/"
+theme: plainwhite
 
-# Content paginator
-paginate_content:
-  enabled: true
-  debug: false
-  collections:
-    - posts
-  auto: false
-  separator: "--page-break--"
-  permalink: "/:num/"
-  seo_canonical: true
-  properties:
-    part:
-      is_generated: true
-    last:
-      is_generated: true
-    single:
-      is_generated: true
-
-# Plugins
 plugins:
-  - jekyll-paginate
-  - jekyll-paginate-content
   - jekyll-seo-tag
-
-# Exclude my node related stuff
-exclude: [
-  'package.json',
-  'package-lock.json',
-  'src',
-  'node_modules',
-  'initpost.sh',
-  'Gemfile',
-  'Gemfile.lock',
-  'gulpfile.js',
-  'README.md'
-]
+#  - jekyll-feed

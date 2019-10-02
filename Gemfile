@@ -1,7 +1,4 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-gem 'rouge'
-gem 'jekyll'
-gem 'jekyll-paginate'
-gem 'jekyll-paginate-content'
-gem 'json'
+source "https://rubygems.org"
+gemspec
