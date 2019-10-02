@@ -15,13 +15,13 @@ Word Embedding là một trong những phương pháp nổi bật nhất để c
 
 Vậy chính xác Word Embedding là gì? Nói một cách đơn giản, chúng là những vector số (thường là số thực). Vậy làm như thế nào để một từ có thể chuyển đổi thành một vector, và quan trọng hơn, làm thế nào để vector đó có thể nắm giữ ngữ cảnh.
 
-### Các loại Word Embedding
+## Các loại Word Embedding
 
 **Word Embedding** được phân thành 2 loại chính:
 - Frequency-based embedding
 - Prediction-based embedding
 
-#### Frequency-based embedding
+### Frequency-based embedding
 
 Phương pháp này dựa vào tần suất xuất hiện của từ để tạo ra vector từ, có 3 loại phổ biến:
 - One-hot encoding (Count Vector)
@@ -30,7 +30,7 @@ Phương pháp này dựa vào tần suất xuất hiện của từ để tạo
 
 Mình sẽ đi chi tiết vào từng loại
 
-##### One-hot encoding (Count Vector)
+#### One-hot encoding (Count Vector)
 
 Đây là phương thức đơn giản nhất để chuyển đổi một từ thành một vector dựa vào sự xuất hiện của từ đó trong tài liệu. Cách tiếp cận này được gọi là countvectorizing hoặc là one-hot encoding.
 
@@ -58,7 +58,7 @@ Mình sẽ đi chi tiết vào từng loại
 
 Như ví dụ trên, chúng ta có 4 documents, và có 9 từ được tìm thấy trong 4 documents này. Tiếp theo là thực hiện việc đếm số lượng xuất hiện của từng từ trong từng document. Và cuối cùng chúng ta vector bên dưới.
 
-##### TF-IDF transforming
+#### TF-IDF transforming
 
 Hãy lấy một ví dụ là trong một đoạn văn bản, các từ xuất hiện thường xuyên như "a", "the", 'is', ... tuy nhiên nó lại không mang nhiều thông tin. Nếu sử dụng phương pháp count vector, thì những từ này được xem như quan trọng và mang nhiều thông tin. Vì vậy chúng ta cần làm giảm mức độ quan trọng của những từ này lại bằng phương pháp TF-IDF (Term Frequency – Inverse Document Frequency).
 
@@ -159,7 +159,7 @@ tfidfDocB = computeTFIDF(tfdocB, idfs)
 pd.DataFrame([tfidfDocA, tfidfDocB])
 ```
 
-###### Co-occurrence Matrix
+##### Co-occurrence Matrix
 
 Tuy nhiên, nhược điểm của cả hai phương pháp trên chính là việc nó chỉ chú trọng đến tần số xuất hiện của một từ, dẫn tới nó hầu như không mang ý nghĩa gì về mặt ngữ cảnh, Co-occurrence Matrix phần nào giải quyết vấn đề đó. Co-occurrence Matrix có ưu điểm là bảo tồn mối quan hệ ngữ nghĩa giữa các từ, được xây dựng dựa trên số lần xuất hiện của các cặp từ trong Context Window. Một Context Window được xác định bởi kích thước và hướng của nó. Hình dưới đây là một ví dụ của Context Window:
 
@@ -205,3 +205,69 @@ co_occ = {ii:dict(co_occ[ii]) for ii in vocab}
 display(co_occ)
 ```
 
+##### Glove (Glove: Global Vectors for Word Representation)
+
+Mô hình Glove dựa trên Co-occurrence Matrix và bản chất là xác suất. Việc đào tạo mô hình Glove sẽ cho ra một không gian vector với cấu trúc có ý nghĩa. 
+
+Để có thể lưu trữ thông tin, chúng ta sử dụng một ma trận Co-occurrence $$X$$, mỗi phần tử trong đó tương đương với xác suất xuất hiện của từ $$j$$ trong ngữ cảnh $$i$$. Chúng ta có công thức sau:
+
+$$P_{ij} = P{j|i} = \frac{X_{ij}} {X_i}$$
+
+Trong đó: 
+- $$X_{ij}: $$ là số lần xuất hiện của từ $$j$$ trong ngữ cảnh của từ $$i$$
+- $$X_i: $$ Là số lần xuất hiện của từ $$i$$ trong ngữ cảnh của toàn bộ các từ còn lại ngoài $$i$$
+
+Từ đây mình sẽ định nghĩa một hàm $$F$$ 
+
+$$F(w_i, w_j, \tilde{w}_k) = \frac(P_{ik}) (P_{jk})$$
+
+Ý tưởng là, độ tương tự ngữ nghĩa giữa hai từ $$i,j$$ có thể được xác định thông qua độ tương tự ngữ nghĩa giữa từ $$k$$ với mỗi từ $$i,j$$. Để rõ hơn về độ tương tự này, ta lấy 2 vector trừ cho nhau:
+
+$$F(w_i - w_j, \tilde{w}_k) = \frac(P_{ik}) (P_{jk})$$
+
+Trong phương trình trên, vế phải là vector, tuy nhiên vế trái là một đại lương vô hướng, vì vậy chúng ta cần biến đổi thêm như sau
+
+$$F((w_i - w_j)^T\tilde{w}_k) = \frac(P_{ik}) (P_{jk})$$
+
+Từ đây chúng ta có thể thay thế xác suất bằng:
+
+
+$$F((w_i - w_j)^T\tilde{w}_k) = \frac(w_i^T\tilde{w}_k) (w_j^T\tilde{w}_k)$$
+
+Trong đó:
+
+$$F(w_i^T\tilde{w}_k) = P_{ik} = \frac{X_{ik}} {X_i}$$$
+
+Nếu chúng ta giả sử hàm $$F$$ là hàm `exp()`, thì phương trình trên trở thành:
+
+$$w_i^T\tilde{w}_k = log P_{ik} = log X_{ik} - log X_i$$
+
+Để tối ưu ta viết lại:
+
+$$w_i^T\tilde{w}_k + b_i + \tilde{b}_k = log X_{ik}$$
+
+Trong đó: $$b_i ,\tilde{b}_k$$ là các bias tương ứng.
+
+Vậy hàm loss function mà chúng ta đang cố gắng để tối ưu là một hàm linear regression:
+
+$$J = \displaystyle\sum_{i,j=1}^{V} f(X_{ij})(w_i^T\tilde{w}_k + b_i + \tilde{b}_k - log X_{ik})^2$$
+
+Trong đó: $$f$$ là hàm trọng số mà sẽ được định nghĩa sẵn
+
+Code demo:
+
+```python
+import itertools
+from gensim.models.word2vec import Text8Corpus
+from glove import Corpus, Glove
+# sentences and corpus from standard library
+sentences = list(itertools.islice(Text8Corpus('text8'),None))
+corpus = Corpus()
+# fitting the corpus with sentences and creating Glove object
+corpus.fit(sentences, window=10)
+glove = Glove(no_components=100, learning_rate=0.05)
+# fitting to the corpus and adding standard dictionary to the object
+glove.fit(corpus.matrix, epochs=30, no_threads=4, verbose=True)
+glove.add_dictionary(corpus.dictionary)
+glove.save('glove.model')
+```
