@@ -24,4 +24,3 @@ Mô hình ngôn ngữ được áp dụng trong rất nhiều lĩnh vực của 
 
 Mô hình ngôn ngữ có nhiều hướng tiếp cận, nhưng chủ yếu được xây dựng theo mô hình Ngram.
 
-<script src="https://ideone.com/e.js/yG0rSF" type="text/javascript" ></script>
