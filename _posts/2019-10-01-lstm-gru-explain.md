@@ -202,9 +202,6 @@ Tóm lại, RNN rất tốt để xử lý dữ liệu chuỗi cho các dự đo
 
 
 
+### Tài liệu tham khảo
 
-
-#### Tài liệu tham khảo
-
-[1]: https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21	"Illustrated guide to LSTM and GRU"
-
+https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21
