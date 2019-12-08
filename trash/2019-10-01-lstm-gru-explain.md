@@ -1,14 +1,17 @@
-```
 ---
-title: 'Cùng tìm hiểu về LSTM, GRU'
-date: 2015-08-14
-permalink: /posts/2019/12/rnn-lstm-gru/
-tags:
-  - nlp
+date: 2019-10-01 00:16:10
+layout: post
+title: LSTM's và GRU's 
+description: >-
+  Bài 
+image: >-
+  https://res.cloudinary.com/dzwwhbt1i/image/upload/c_scale,h_300,w_400/v1569863989/lstm_n5dznh.png
+category: nlp
+author: levanpon98
+paginate: true
 ---
-```
 
-Trong bài viết này, mình sẽ giới thiệu về LSTM's và GRU's, sau đó mình sẽ giải thích chi tiết LSTM's và GRU's, tại sao nó lại tốt hơn RNN và tốt hơn ở điểm nào. Nếu các bạn đang muốn hiểu thật kỹ về 2 networks này thì đây chính là bài viết đáng để đọc.
+![alt text](https://res.cloudinary.com/dzwwhbt1i/image/upload/v1569869055/1_n-IgHZM5baBUjq0T7RYDBw_tpxeja.gif "LSTM")
 
 
 ### Recurrent Neural Networks
@@ -112,6 +115,7 @@ Bước tiếp theo là chúng ta sẽ quyết định những thông tin nào s
 $$ i_t = \sigma(W_i \cdot [h_{t - 1}, x_t] + b_i) \\
 \tilde{C}_t = \tanh(W_C \cdot [h_{t - 1}, x_t] + b_C)
 $$
+
 ![alt text](https://res.cloudinary.com/dzwwhbt1i/image/upload/v1569866521/1_TTmYy7Sy8uUXxUXfzmoKbA_gaykpb.gif "tanh activation")
 
 #### Cell State
@@ -129,6 +133,7 @@ Cuối cùng chúng ta có cổng output, cổng này sẽ quyết định thôn
 - Đầu tiên chúng ta đưa dữ liệu qua một hàm sigmoid để lọc.
 - Tiếp theo đưa cell state mới qua một hàm Tanh.
 - Nhận 2 vector nhận được lại với nhau, ta được vector output đã được lọc
+
 $$
 o_t = \sigma(W_o [h_{t - 1}, x_t] + b_o) \\
 h_t = o_t * \tanh(C_t)
@@ -201,12 +206,4 @@ Cổng reset là một cổng khác được sử dụng để quyết định q
 ### Tổng kết
 
 Tóm lại, RNN rất tốt để xử lý dữ liệu chuỗi cho các dự đoán nhưng bị bộ nhớ ngắn hạn. LSTM và GRU được tạo ra như một phương pháp để khắc phục bộ nhớ ngắn hạn bằng cách sử dụng các cơ chế gọi là cổng. Cổng  chỉ là mạng lưới thần kinh điều chỉnh luồng thông tin chảy qua chuỗi. LSTM và GRU, được sử dụng trong các ứng dụng Deep learning hiện đại như nhận dạng giọng nói, tổng hợp giọng nói, hiểu ngôn ngữ tự nhiên, v.v.
-
-
-
-
-
-#### Tài liệu tham khảo
-
-[1]: https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21	"Illustrated guide to LSTM and GRU"
 
