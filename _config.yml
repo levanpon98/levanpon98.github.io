@@ -80,10 +80,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  name             : "Le Van Pon"
+  avatar           : "https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.0-9/p960x960/56721508_380860089173465_4206383342116929536_o.jpg?_nc_cat=107&_nc_ohc=nd4qz56eEkUAQl5200kR-I_UYwTEcLabIxXrc4R2tKPjrqPQF4ZWOsRYg&_nc_ht=scontent.fsgn3-1.fna&oh=134b0b5be7e72ea33ff24a2efad0aaf8&oe=5E7E241F"
+  bio              : "If you're good at something, never do it for free"
+  location         : "VietNam"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "http://yourfullgooglescholarurl.com"
