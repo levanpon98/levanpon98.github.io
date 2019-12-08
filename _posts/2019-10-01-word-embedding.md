@@ -1,14 +1,9 @@
 ---
-date: 2019-10-02 00:16:10
-layout: post
-title: Word Embedding
-description: >-
-  Bài 
-image: >-
-  https://res.cloudinary.com/dzwwhbt1i/image/upload/c_scale,h_300,w_400/v1569863989/lstm_n5dznh.png
-category: nlp
-author: levanpon98
-paginate: true
+title: 'Cùng tìm hiểu về Word Embedding (Code Python demo)'
+date: 2015-08-14
+permalink: /posts/2019/12/word-embedding/
+tags:
+  - nlp
 ---
 
 Word Embedding là một trong những phương pháp nổi bật nhất để có thể biểu diễn một từ. Nó có khả năng tóm lượt ngữ cảnh của một từ trong đoạn văn, sự tương đồng về ngữ nghĩa và cú pháp, và quan hệ giữa các từ khác...
@@ -16,6 +11,7 @@ Word Embedding là một trong những phương pháp nổi bật nhất để c
 Vậy chính xác Word Embedding là gì? Nói một cách đơn giản, chúng là những vector số (thường là số thực). Vậy làm như thế nào để một từ có thể chuyển đổi thành một vector, và quan trọng hơn, làm thế nào để vector đó có thể nắm giữ ngữ cảnh.
 
 **Word Embedding** được phân thành 2 loại chính:
+
 - Frequency-based embedding
 - Prediction-based embedding
 

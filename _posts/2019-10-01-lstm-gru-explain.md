@@ -1,6 +1,6 @@
 ---
 title: 'Cùng tìm hiểu về LSTM, GRU'
-date: 2015-08-14
+date: 2019-10-01
 permalink: /posts/2019/12/rnn-lstm-gru/
 tags:
   - nlp
