@@ -1,6 +1,6 @@
 ---
 title: 'Cùng tìm hiểu về Word Embedding (Code Python demo)'
-date: 2015-08-14
+date: 2019-09-27
 permalink: /posts/2019/12/word-embedding/
 tags:
   - nlp
