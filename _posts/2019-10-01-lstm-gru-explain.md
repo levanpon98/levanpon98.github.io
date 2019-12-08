@@ -1,4 +1,3 @@
-```
 ---
 title: 'Cùng tìm hiểu về LSTM, GRU'
 date: 2015-08-14
@@ -6,7 +5,6 @@ permalink: /posts/2019/12/rnn-lstm-gru/
 tags:
   - nlp
 ---
-```
 
 Trong bài viết này, mình sẽ giới thiệu về LSTM's và GRU's, sau đó mình sẽ giải thích chi tiết LSTM's và GRU's, tại sao nó lại tốt hơn RNN và tốt hơn ở điểm nào. Nếu các bạn đang muốn hiểu thật kỹ về 2 networks này thì đây chính là bài viết đáng để đọc.
 
