@@ -1,44 +1,33 @@
 {
-  "name": "jekflix-template",
-  "version": "2.0.0",
-  "description": "A Jekyll theme inspired by Netflix",
-  "main": "gulpfile.js",
-  "homepage": "https://github.com/thiagorossener/jekflix-template.git#readme",
+  "name": "minimal-mistakes",
+  "version": "3.4.2",
+  "description": "Minimal Mistakes Jekyll theme npm build scripts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thiagorossener/jekflix-template.git"
+    "url": "git://github.com/mmistakes/minimal-mistakes.git"
   },
   "keywords": [
     "jekyll",
-    "template",
     "theme",
-    "blog",
-    "netlify"
+    "minimal"
   ],
-  "author": "Thiago Rossener",
+  "author": "Michael Rose",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thiagorossener/jekflix-template/issues"
+    "url": "https://github.com/mmistakes/minimal-mistakes/issues"
+  },
+  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
+  "engines": {
+    "node": ">= 0.10.0"
   },
   "devDependencies": {
-    "autoprefixer-stylus": "^0.14.0",
-    "browser-sync": "^2.26.7",
-    "child_process": "^1.0.2",
-    "del": "^5.0.0",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^6.0.0",
-    "gulp-include": "^2.4.1",
-    "gulp-plumber": "^1.1.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-stylus": "^2.6.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-yaml": "^2.0.4",
-    "jeet": "^7.1.0",
-    "kouto-swiss": "^1.1.0",
-    "rupture": "^0.6.2",
-    "lodash": "^4.17.13",
-    "lodash.merge": "^4.6.2"
+    "npm-run-all": "^1.7.0",
+    "onchange": "^2.2.0",
+    "uglify-js": "^2.6.1"
+  },
+  "scripts": {
+    "uglify": "uglifyjs assets/js/vendor/jquery/jquery-1.12.4.min.js assets/js/plugins/jquery.fitvids.js assets/js/plugins/jquery.greedy-navigation.js assets/js/plugins/jquery.magnific-popup.js assets/js/plugins/jquery.smooth-scroll.min.js assets/js/plugins/stickyfill.min.js assets/js/_main.js -c -m -o assets/js/main.min.js",
+    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
+    "build:js": "npm run uglify"
   }
 }
