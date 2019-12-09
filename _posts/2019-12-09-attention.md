@@ -98,8 +98,8 @@ Lúc này bộ decoder sẽ sinh ra từ tiếp theo của chuỗi và hidden st
 ## Tài liệu tham khảo
 
 - [http://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/](http://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
-- [https://towardsdatascience.com/intuitive-understanding-of-attention-mechanism-in-deep-learning-6c9482aecf4f] (https://towardsdatascience.com/intuitive-understanding-of-attention-mechanism-in-deep-learning-6c9482aecf4f)
-- [https://arxiv.org/abs/1409.0473] (https://arxiv.org/abs/1409.0473)
-- [https://medium.com/@shashank7.iitd/understanding-attention-mechanism-35ff53fc328e] (https://medium.com/@shashank7.iitd/understanding-attention-mechanism-35ff53fc328e)
-- [https://blog.floydhub.com/attention-mechanism/] (https://blog.floydhub.com/attention-mechanism/)
+- [https://towardsdatascience.com/intuitive-understanding-of-attention-mechanism-in-deep-learning-6c9482aecf4f](https://towardsdatascience.com/intuitive-understanding-of-attention-mechanism-in-deep-learning-6c9482aecf4f)
+- [https://arxiv.org/abs/1409.0473](https://arxiv.org/abs/1409.0473)
+- [https://medium.com/@shashank7.iitd/understanding-attention-mechanism-35ff53fc328e](https://medium.com/@shashank7.iitd/understanding-attention-mechanism-35ff53fc328e)
+- [https://blog.floydhub.com/attention-mechanism/](https://blog.floydhub.com/attention-mechanism/)
 
