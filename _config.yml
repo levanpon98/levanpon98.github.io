@@ -57,9 +57,9 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &levanpon1009
 facebook:
-  username               :
+  username               : 
   app_id                 :
   publisher              :
 og_image                 :  # Open Graph/Twitter default site image
@@ -85,16 +85,16 @@ author:
   bio              : "If you're good at something, never do it for free"
   location         : "VietNam"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
-  bitbucket        :
+  pubmed           : 
+  googlescholar    : 
+  email            : "levanpon1009@gmail.com"
+  researchgate     : 
+  uri              : 
+  bitbucket        : "levanpon1009"
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "levanpon12"
   foursquare       :
   github           : "levanpon98"
   google_plus      :
@@ -103,14 +103,14 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : 
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : "http://stackoverflow.com/users/12462903/levanpon1009"
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
-  vine             :
+  twitter          : "levanpon1009"
+  vine             : 
   weibo            :
   xing             :
   youtube          :
